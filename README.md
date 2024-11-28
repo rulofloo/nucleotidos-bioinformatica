@@ -26,7 +26,7 @@ if option == "Análisis de Secuencia":
         # Gráfica de distribución
         counts = {base: seq.count(base) for base in "ATGC"}
         fig, ax = plt.subplots()
-        ax.bar(counts.keys(), counts.values(), color=['red', 'blue', 'green', 'purple'])
+        ax.bar(counts.keys(), counts.values(), color=['purple', 'gray', 'green', 'yellow'])
         ax.set_title("Distribución de Nucleótidos")
         ax.set_xlabel("Bases")
         ax.set_ylabel("Frecuencia")
